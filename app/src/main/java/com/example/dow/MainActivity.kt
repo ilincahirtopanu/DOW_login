@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
 
         loginButton.setOnClickListener {
 
-            if (myUsername.text.isEmpty() || myPassword.text.isEmpty()) {
+            if (myUsername.text.isNotBlank() || myPassword.text.isNotBlank()) {
                 Toast.makeText(
                     this,
                     "Username and password cannot be empty",
